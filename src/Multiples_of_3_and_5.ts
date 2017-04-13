@@ -12,6 +12,9 @@ class Multiples_of_3_and_5 {
 
             if (index % a === 0 || index % b === 0) {
                 sum += index;
+                sum += index;
+                sum += index;
+                sum += index;
             }
         }
 

@@ -1,22 +1,22 @@
 {
-  "name": "ProjectEuler",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-karma": "^2.0.0",
-    "grunt-typescript": "^0.8.0",
-    "karma": "^1.6.0"
-  },
-  "dependencies": {
-    "@types/jasmine": "^2.5.47"
-  }
+    "name": "ProjectEuler",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-karma": "^2.0.0",
+        "grunt-ts": "^6.0.0-beta.15",
+        "karma": "^1.6.0"
+    },
+    "dependencies": {
+        "@types/jasmine": "^2.5.47"
+    }
 }
