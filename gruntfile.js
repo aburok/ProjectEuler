@@ -7,16 +7,14 @@ module.exports = function(grunt) {
             default: {
                 src: ["src/**/*.ts"],
                 outDir: "dist",
+            },
+            option: {
                 sourceMap: false
             }
         },
         jasmine: {
             // Your project's source files
             src: 'dist/**/*.js',
-            // Your Jasmine spec files
-            specs: 'dist/**/*.spec.js',
-            // Your spec helper files
-            helpers: 'specs/helpers/*.js'
         },
         karma: {
             options: {
@@ -32,7 +30,7 @@ module.exports = function(grunt) {
         },
         watch: {
             files: '**/*.ts',
-            tasks: ['ts', 'karma']
+            tasks: ['ts', 'jasmine'],
         }
     });
 
@@ -40,9 +38,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks("grunt-ts");
     grunt.loadNpmTasks('grunt-karma');
-
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
 
     // Default task(s).
-    grunt.registerTask('default', ['ts', 'karma', 'watch']);
+    grunt.registerTask('default', ['ts', 'watch']);
 
 };
